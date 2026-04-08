@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services-section.css" />
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="top-nav__inner">
+            <a href="#top" class="top-nav__avatar" aria-label="Home">
+                <img src="./assets/logo.svg" alt="Logo" />
+            </a>
+
+            <nav class="top-nav__menu" aria-label="Main navigation">
+                <a href="#about" class="top-nav__link">About</a>
+                <a href="#track-record" class="top-nav__link">Track Record</a>
+                <a href="#services" class="top-nav__link">Services</a>
+                <a href="#case-studies" class="top-nav__link">Case Studies</a>
+                <a href="#process" class="top-nav__link">Process</a>
+                <a href="#reviews" class="top-nav__link">Reviews</a>
+            </nav>
+
+            <div class="top-nav__controls">
+
+
+                <button class="top-nav__lang" type="button" aria-label="Language switcher">
+                    <span class="lang-item">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English flag" />
+                        <span>English</span>
+                    </span>
+                    <span class="lang-sep">|</span>
+                    <span class="lang-item">
+                        <img src="https://flagcdn.com/w20/de.png" alt="Deutsch flag" />
+                        <span>Deutsch</span>
+                    </span>
+                    <span class="lang-caret">▾</span>
+                </button>
+
+                <a href="#contact-us" class="top-nav__cta">Lets Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="top">
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
+            <h1>
+                Fractional CSO/CRO for SMEs & Start-Ups in Sustainable Technologies
+                Energy & Mobility
+            </h1>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="container">
+            <!-- Top Logo Row -->
+            <div class="logo-strip">
+                <div class="logo-card">
+                    <img src="https://cdn.simpleicons.org/tesla/0A2EA8" alt="Tesla" />
+                </div>
+                <div class="logo-card">
+                    <img src="https://cdn.simpleicons.org/siemens/0A2EA8" alt="Siemens" />
+                </div>
+                <div class="logo-card">
+                    <img src="https://cdn.simpleicons.org/bmw/0A2EA8" alt="BMW" />
+                </div>
+                <div class="logo-card">
+                    <img src="https://cdn.simpleicons.org/volkswagen/0A2EA8" alt="Volkswagen" />
+                </div>
+                <div class="logo-card">
+                    <img src="https://cdn.simpleicons.org/mercedes/0A2EA8" alt="Mercedes" />
+                </div>
+            </div>
+
+            <!-- Bottom Content -->
+            <div class="about-grid">
+                <div class="about-label">
+                    <span>About</span>
+                </div>
+
+                <div class="about-content">
+                    <h2>
+                        Hi, I’m Martin. The CSO/CRO for your next growth phase. From
+                        strategic sparring to full-time operational engagement.
+                    </h2>
+
+                    <div class="about-actions">
+                        <a href="#" class="btn btn-primary">
+                            Let’s Talk
+                            <span>→</span>
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            Learn More About Me
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Image Slider -->
+            <div class="about-slider-wrap">
+                <div class="swiper aboutSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Wind energy" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Solar energy" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Technology and innovation" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Clean energy field" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Electric mobility" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Sustainable energy" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Wind energy" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Solar energy" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Technology and innovation" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Clean energy field" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Electric mobility" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slide-card">
+                                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Sustainable energy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="track-record-section" id="track-record">
+        <div class="container">
+            <div class="track-record__top">
+                <h2 class="track-record__title">
+                    What I Bring to<br />
+                    the Table
+                </h2>
+
+                <p class="track-record__intro">
+                    The experience, results, and lessons I bring from building, leading,
+                    & growing across different stages
+                </p>
+            </div>
+
+            <div class="track-record__content">
+                <div class="track-record__label">
+                    <span>Track Record</span>
+                </div>
+
+                <div class="track-record__list">
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>CRO at neoom</strong> scaling<br />revenue from
+                                <strong>€10M to €72M</strong>
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>8 years in VW/Porsche</strong> leading<br />across
+                                sales & business operations.
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>€1M in first year</strong> of e-commerce<br />build
+                                for the family business.
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>CSO at Econetix</strong> building<br />growth from the
+                                ground up.
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>€1M in first year</strong> of e-commerce<br />build
+                                for the family business.
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <a href="#" class="track-record__item">
+                        <div class="track-record__text">
+                            <h3>
+                                <strong>Founder of GridHive Energy,</strong><br />building
+                                better battery storage.
+                            </h3>
+                        </div>
+                        <div class="track-record__link">Read More <span>↗</span></div>
+                    </a>
+
+                    <div class="track-record__actions">
+                        <a href="#" class="btn btn-primary">
+                            Let’s Talk
+                            <span>→</span>
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            See My Full Track Record
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper" id="services">
+        <!-- LEFT -->
+        <aside class="sidebar">
+            <div>
+                <h3>Services</h3>
+
+                <div class="services-list">
+                    <div class="service-link" data-target="card-1">
+                        Go-to-Market<br />&amp; Sales Strategy
+                    </div>
+                    <div class="service-link" data-target="card-2">
+                        Sparring &amp; Advisory
+                    </div>
+                    <div class="service-link active" data-target="card-3">
+                        Fractional CSO/CRO<br />&amp; Hands-on Execution
+                    </div>
+                    <div class="service-link" data-target="card-4">
+                        Keynotes &amp; Speaking
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="cta-btn">Let’s Work Together <span>→</span></a>
+        </aside>
+
+        <!-- RIGHT -->
+        <main class="content-area">
+            <section class="cards" id="cards">
+                <article class="card variant-1" id="card-1" data-nav="0">
+                    <span class="card-anchor"></span>
+                    <div class="card-inner">
+                        <div class="card-panel">
+                            <h2 class="card-title">
+                                Go-to-Market<br />&amp; Sales Strategy
+                            </h2>
+                            <div class="card-badge">
+                                Workshop-based, 2–4 weeks, remote or on-site
+                            </div>
+
+                            <div class="card-copy">
+                                <p>
+                                    Your product works. But leads aren’t coming in consistently,
+                                    your sales team operates without a clear system, or you’re
+                                    losing deals you should be winning.
+                                </p>
+
+                                <p>
+                                    I build a sales strategy with you that fits your stage: Who
+                                    are your best customers, how do you reach them, what’s your
+                                    story, and what does a sales engine look like that grows
+                                    predictably? Whether seed stage or €20M revenue, whether
+                                    hardware, SaaS, or services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card variant-2" id="card-2" data-nav="1">
+                    <div class="card-inner">
+                        <div class="card-panel">
+                            <h2 class="card-title">Sparring &amp;<br />Advisory</h2>
+                            <div class="card-badge">
+                                Focused sessions, remote or on-site
+                            </div>
+
+                            <div class="card-copy">
+                                <p>
+                                    For founders and commercial leaders who need an experienced
+                                    sparring partner to challenge assumptions, sharpen
+                                    priorities, and bring clarity to growth decisions.
+                                </p>
+
+                                <p>
+                                    We work together on the real questions: where to focus, what
+                                    to fix first, how to improve commercial direction, and what
+                                    actions will create momentum fastest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card variant-3" id="card-3" data-nav="2">
+                    <div class="card-inner">
+                        <div class="card-panel">
+                            <h2 class="card-title">
+                                Fractional CSO/CRO<br />&amp; Hands-on Execution
+                            </h2>
+                            <div class="card-badge">Embedded commercial leadership</div>
+
+                            <div class="card-copy">
+                                <p>
+                                    When you need more than advice, I work alongside your team
+                                    to build and improve the commercial engine — from pipeline
+                                    structure and sales process to messaging, forecasting and
+                                    team rhythm.
+                                </p>
+
+                                <p>
+                                    Senior leadership support without the overhead of a
+                                    full-time executive, with clear accountability and practical
+                                    execution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card variant-4" id="card-4" data-nav="3">
+                    <div class="card-inner">
+                        <div class="card-panel">
+                            <h2 class="card-title">Keynotes &amp;<br />Speaking</h2>
+                            <div class="card-badge">
+                                Events, off-sites and leadership sessions
+                            </div>
+
+                            <div class="card-copy">
+                                <p>
+                                    Clear, practical talks on B2B sales, go-to-market,
+                                    leadership and commercial growth — designed to be useful,
+                                    grounded and directly applicable.
+                                </p>
+
+                                <p>
+                                    Ideal for founder communities, leadership teams, commercial
+                                    off-sites and company events.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="services-section.js"></script>
+
+    <section class="practice-section" id="case-studies">
+        <div class="container">
+            <div class="practice-top">
+                <h2 class="practice-title">
+                    What It Looks<br />
+                    Like in Practice
+                </h2>
+
+                <p class="practice-intro">
+                    A closer look at the companies, growth phases, and results behind
+                    the work
+                </p>
+            </div>
+
+            <div class="practice-grid">
+                <article class="practice-card">
+                    <div class="practice-card__image">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
+                            alt="Clean energy growth" />
+                    </div>
+                    <div class="practice-card__content">
+                        <h3>
+                            <strong>CRO at neoom</strong> scaling<br />
+                            revenue from <strong>€10M to €72M</strong>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="practice-card">
+                    <div class="practice-card__image">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+                            alt="Automotive business operations" />
+                    </div>
+                    <div class="practice-card__content">
+                        <h3>
+                            <strong>8 years in VW/Porsche</strong> leading<br />
+                            across sales &amp; business operations.
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="practice-card">
+                    <div class="practice-card__image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                            alt="E-commerce growth" />
+                    </div>
+                    <div class="practice-card__content">
+                        <h3>
+                            <strong>€1M in first year</strong> of e-commerce<br />
+                            build for the family business.
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="practice-card">
+                    <div class="practice-card__image">
+                        <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80"
+                            alt="Battery storage and energy" />
+                    </div>
+                    <div class="practice-card__content">
+                        <h3>
+                            <strong>Founder of GridHive Energy,</strong><br />
+                            building better battery storage.
+                        </h3>
+                    </div>
+                </article>
+            </div>
+
+            <div class="practice-actions">
+                <a href="#" class="btn btn-primary">
+                    Let’s Talk
+                    <span>→</span>
+                </a>
+
+                <a href="#" class="btn btn-outline">
+                    Read All Case Studies
+                    <span>↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="working-section" id="process">
+        <div class="container">
+            <div class="working-top">
+                <h2 class="working-title">
+                    How We’ll be<br />
+                    Working Together
+                </h2>
+
+                <p class="working-intro">
+                    A simple process to understand where you are what you need &amp; how
+                    I can help move things forward
+                </p>
+            </div>
+
+            <div class="working-grid">
+                <article class="working-card">
+                    <div class="working-card__number">01</div>
+                    <div class="working-card__body">
+                        <h3 class="working-card__title">
+                            Getting to Know Each Other <span>(30 Min)</span>
+                        </h3>
+                        <p class="working-card__text">
+                            We talk about your situation: Where are you? What's not
+                            working? What's your goal?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="working-card">
+                    <div class="working-card__number">02</div>
+                    <div class="working-card__body">
+                        <h3 class="working-card__title">
+                            Making the <br> Game Plan <span>(1-2 Weeks)</span>
+                        </h3>
+                        <p class="working-card__text">
+                            I analyze your setup, talk to your team, and develop a
+                            concrete plan: What do we do, in what order, with what
+                            outcome?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="working-card">
+                    <div class="working-card__number">03</div>
+                    <div class="working-card__body">
+                        <h3 class="working-card__title">Executing <br> the Plan <span>Ongoing</span></h3>
+                        <p class="working-card__text">
+                            We execute. Depending on your needs: as strategic sparring
+                            partner, in workshops, or directly operational as your
+                            fractional CSO/CRO.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="working-actions">
+                <a href="#" class="btn btn-primary">
+                    Let’s Start
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="reviews-top">
+                <h2 class="reviews-title">
+                    What People Say About<br />
+                    Working With Me
+                </h2>
+            </div>
+
+            <div class="reviews-slider-shell">
+                <button class="reviews-nav reviews-nav--prev" aria-label="Previous review">
+                    <span>←</span>
+                </button>
+
+                <div class="reviews-slider-wrap">
+                    <div class="swiper reviewsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-card__content">
+                                        <p>
+                                            “What stood out was not only the strategic clarity, but
+                                            the ability to get things moving fast. Martin works
+                                            close to the team, challenges assumptions, and creates
+                                            real commercial traction.”
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card__footer">
+                                        <div class="review-card__author">
+                                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                                                alt="Clara Neumann" />
+                                            <div>
+                                                <h4>Clara Neumann</h4>
+                                                <span>Commercial Lead, Energy Venture</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-card__quote">”</div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-card__content">
+                                        <p>
+                                            “Martin hat unseren Vertrieb und den Marketingauftritt
+                                            auf ein komplett neues Level gebracht. Klare Strategie
+                                            und Maßnahmen, Fokus auf das was zählt, Hands-on
+                                            Umsetzung und nach 7 Monaten den größten Deal der
+                                            Firmengeschichte abgeschlossen.”
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card__footer">
+                                        <div class="review-card__author">
+                                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80"
+                                                alt="Julia Zivi" />
+                                            <div>
+                                                <h4>Julia Zivi</h4>
+                                                <span>CEO & Founder, GreenTech Studio</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-card__quote">”</div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-card__content">
+                                        <p>
+                                            “Martin brought structure, focus, and momentum into our
+                                            commercial setup. He quickly identified what mattered
+                                            most and helped turn strategy into actions the team
+                                            could actually execute.”
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card__footer">
+                                        <div class="review-card__author">
+                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                                                alt="Walter Kreisel" />
+                                            <div>
+                                                <h4>Walter Kreisel</h4>
+                                                <span>Chairman & Founder, neoom AG</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-card__quote">”</div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-card__content">
+                                        <p>
+                                            “Martin helped us sharpen our positioning, focus the
+                                            team, and build a more predictable commercial process.
+                                            The impact was visible quickly and the quality of
+                                            execution stayed high.”
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card__footer">
+                                        <div class="review-card__author">
+                                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+                                                alt="Tobias Wieser" />
+                                            <div>
+                                                <h4>Tobias Wieser</h4>
+                                                <span>Founder & Managing Director</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-card__quote">”</div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-card__content">
+                                        <p>
+                                            “He combines senior commercial thinking with real
+                                            hands-on execution. That mix is rare. Martin helped us
+                                            move faster, simplify decisions, and create momentum
+                                            across the business.”
+                                        </p>
+                                    </div>
+
+                                    <div class="review-card__footer">
+                                        <div class="review-card__author">
+                                            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=200&q=80"
+                                                alt="Daniel Berger" />
+                                            <div>
+                                                <h4>Daniel Berger</h4>
+                                                <span>Growth Advisor, Mobility Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-card__quote">”</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="reviews-nav reviews-nav--next" aria-label="Next review">
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-us">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">Let’s Talk</h2>
+                <p class="contact-subtitle">
+                    Book 30 minutes in my calendar.<br />
+                    We’ll figure out together if and how I can help.<br />
+                    No pitch, no sales talk.
+                </p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="contact-grid contact-grid--full">
+                    <div class="form-field">
+                        <input type="text" name="full_name" placeholder="Full Name*" required />
+                    </div>
+                </div>
+
+                <div class="contact-grid contact-grid--two">
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Email*" required />
+                    </div>
+
+                    <div class="form-field">
+                        <input type="tel" name="phone" placeholder="Phone*" required />
+                    </div>
+                </div>
+
+                <div class="contact-grid contact-grid--three">
+                    <div class="form-field">
+                        <input type="text" name="company" placeholder="Company*" required />
+                    </div>
+
+                    <div class="form-field">
+                        <input type="text" name="industry" placeholder="Industry*" required />
+                    </div>
+
+                    <div class="form-field form-field--select">
+                        <select name="location" required>
+                            <option value="" selected disabled hidden>Location*</option>
+                            <option>Austria</option>
+                            <option>Germany</option>
+                            <option>Switzerland</option>
+                            <option>United Kingdom</option>
+                            <option>United States</option>
+                            <option>Remote</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contact-grid contact-grid--full">
+                    <div class="form-field form-field--textarea">
+                        <textarea name="message" placeholder="Message (optional)"></textarea>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <button type="submit" class="contact-btn">
+                        Let’s Talk
+                        <span>→</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Left Column -->
+                <div class="footer-col footer-col--left">
+                    <a href="#" class="footer-signature">
+                        <img src="./assets/signature.png" alt="Martin Riegler signature" />
+                    </a>
+
+                    <h2 class="footer-title">Martin Riegler</h2>
+
+                    <p class="footer-description">
+                        Interim CSO/CRO helping companies in energy, mobility, and
+                        sustainable technologies grow with better sales, sharper strategy
+                        &amp; hands-on execution
+                    </p>
+
+                    <div class="footer-links-grid">
+                        <ul class="footer-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Track Record</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+
+                        <ul class="footer-links">
+                            <li><a href="#">How I Work</a></li>
+                            <li><a href="#">Speaking</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6.94 8.5H3.56V20H6.94V8.5Z" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M5.25 6.25C6.2165 6.25 7 5.4665 7 4.5C7 3.5335 6.2165 2.75 5.25 2.75C4.2835 2.75 3.5 3.5335 3.5 4.5C3.5 5.4665 4.2835 6.25 5.25 6.25Z"
+                                    stroke="currentColor" stroke-width="1.7" />
+                                <path
+                                    d="M12.56 20V13.48C12.56 11.99 13.39 10.98 14.82 10.98C16.19 10.98 16.86 11.91 16.86 13.48V20H20.25V12.38C20.25 9.58 18.75 8.28 16.74 8.28C15.12 8.28 14.39 9.17 13.99 9.79V8.5H10.75C10.79 9.36 10.75 20 10.75 20H12.56Z"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor"
+                                    stroke-width="1.7" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7" />
+                                <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4L20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                                <path d="M20 4L4 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M14 8H16.5V4.8C16.07 4.74 15.15 4.6 14.08 4.6C11.83 4.6 10.29 5.97 10.29 8.5V11H7.5V14.58H10.29V20H13.71V14.58H16.39L16.82 11H13.71V8.86C13.71 7.83 13.99 8 14 8Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21 12C21 12 21 8.9 20.6 7.4C20.38 6.57 19.73 5.92 18.9 5.7C17.4 5.3 12 5.3 12 5.3C12 5.3 6.6 5.3 5.1 5.7C4.27 5.92 3.62 6.57 3.4 7.4C3 8.9 3 12 3 12C3 12 3 15.1 3.4 16.6C3.62 17.43 4.27 18.08 5.1 18.3C6.6 18.7 12 18.7 12 18.7C12 18.7 17.4 18.7 18.9 18.3C19.73 18.08 20.38 17.43 20.6 16.6C21 15.1 21 12 21 12Z"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                                <path d="M10 9.25L15 12L10 14.75V9.25Z" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="footer-divider"></div>
+
+                <!-- Right Column -->
+                <div class="footer-col footer-col--right">
+                    <a href="#" class="footer-brandmark">
+                        <img src="./assets/arrow.png" alt="nextera brand icon" />
+                    </a>
+
+                    <h2 class="footer-title">nextera GmbH</h2>
+
+                    <p class="footer-description">
+                        Providing the structure and platform through which he leads
+                        projects, works with clients and brings in specialist support when
+                        needed
+                    </p>
+
+                    <div class="footer-links-grid">
+                        <ul class="footer-links">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+
+                        <ul class="footer-links">
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">DE | EN</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6.94 8.5H3.56V20H6.94V8.5Z" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M5.25 6.25C6.2165 6.25 7 5.4665 7 4.5C7 3.5335 6.2165 2.75 5.25 2.75C4.2835 2.75 3.5 3.5335 3.5 4.5C3.5 5.4665 4.2835 6.25 5.25 6.25Z"
+                                    stroke="currentColor" stroke-width="1.7" />
+                                <path
+                                    d="M12.56 20V13.48C12.56 11.99 13.39 10.98 14.82 10.98C16.19 10.98 16.86 11.91 16.86 13.48V20H20.25V12.38C20.25 9.58 18.75 8.28 16.74 8.28C15.12 8.28 14.39 9.17 13.99 9.79V8.5H10.75C10.79 9.36 10.75 20 10.75 20H12.56Z"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor"
+                                    stroke-width="1.7" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7" />
+                                <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4L20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                                <path d="M20 4L4 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M14 8H16.5V4.8C16.07 4.74 15.15 4.6 14.08 4.6C11.83 4.6 10.29 5.97 10.29 8.5V11H7.5V14.58H10.29V20H13.71V14.58H16.39L16.82 11H13.71V8.86C13.71 7.83 13.99 8 14 8Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21 12C21 12 21 8.9 20.6 7.4C20.38 6.57 19.73 5.92 18.9 5.7C17.4 5.3 12 5.3 12 5.3C12 5.3 6.6 5.3 5.1 5.7C4.27 5.92 3.62 6.57 3.4 7.4C3 8.9 3 12 3 12C3 12 3 15.1 3.4 16.6C3.62 17.43 4.27 18.08 5.1 18.3C6.6 18.7 12 18.7 12 18.7C12 18.7 17.4 18.7 18.9 18.3C19.73 18.08 20.38 17.43 20.6 16.6C21 15.1 21 12 21 12Z"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                                <path d="M10 9.25L15 12L10 14.75V9.25Z" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const cards = gsap.utils.toArray(".service-card");
+        const navItems = gsap.utils.toArray(".services-nav li");
+        const navLinks = gsap.utils.toArray(".services-nav a");
+        const cardsWrap = document.querySelector(".services-cards-wrap");
+        const cardsContainer = document.querySelector(".services-cards");
+
+        function setActiveNav(index) {
+            navItems.forEach((item, i) => {
+                item.classList.toggle("active", i === index);
+            });
+        }
+
+        if (window.innerWidth > 1200) {
+            cards.forEach((card, i) => {
+                gsap.set(card, {
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    y: i * 18,
+                    scale: 1,
+                    zIndex: cards.length - i,
+                });
+            });
+
+            const step = 240;
+            const totalScroll = step * (cards.length - 1) + 320;
+
+            const master = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".services-layout",
+                    start: "top top+=30",
+                    end: `+=${totalScroll}`,
+                    pin: cardsWrap,
+                    scrub: 1,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                },
+            });
+
+            cards.forEach((card, i) => {
+                if (i < cards.length - 1) {
+                    master.to(
+                        card,
+                        {
+                            y: -110,
+                            scale: 0.9,
+                            opacity: 0.55,
+                            duration: 1,
+                        },
+                        i,
+                    );
+                }
+            });
+
+            cards.forEach((card, i) => {
+                ScrollTrigger.create({
+                    trigger: ".services-layout",
+                    start: `top top-=${i * step - 40}`,
+                    end: `top top-=${i * step + step}`,
+                    onEnter: () => setActiveNav(i),
+                    onEnterBack: () => setActiveNav(i),
+                });
+            });
+
+            navLinks.forEach((link, i) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    setActiveNav(i);
+
+                    const st = ScrollTrigger.getAll().find(
+                        (t) => t.vars.pin === cardsWrap,
+                    );
+                    if (!st) return;
+
+                    const targetY = st.start + i * step;
+                    window.scrollTo({
+                        top: targetY,
+                        behavior: "smooth",
+                    });
+                });
+            });
+        } else {
+            cards.forEach((card) => {
+                card.style.position = "relative";
+                card.style.top = "auto";
+                card.style.left = "auto";
+                card.style.transform = "none";
+                card.style.opacity = "1";
+            });
+
+            cards.forEach((card, i) => {
+                ScrollTrigger.create({
+                    trigger: card,
+                    start: "top center",
+                    end: "bottom center",
+                    onEnter: () => setActiveNav(i),
+                    onEnterBack: () => setActiveNav(i),
+                });
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const id = link.getAttribute("data-card");
+                    const target = document.getElementById(id);
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                });
+            });
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const aboutSwiper = new Swiper(".aboutSwiper", {
+            loop: true,
+            speed: 900,
+            spaceBetween: 20,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.15,
+                    spaceBetween: 14,
+                },
+                480: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 14,
+                },
+                768: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 16,
+                },
+                1024: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 18,
+                },
+                1400: {
+                    slidesPerView: 4.2,
+                    spaceBetween: 20,
+                },
+                1600: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
