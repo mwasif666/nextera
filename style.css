@@ -1839,7 +1839,7 @@ body {
 }
 
 .practice-card__content {
-  padding: 22px 22px 26px;
+  padding: 22px 16px 26px;
   display: flex;
   align-items: flex-start;
 }
@@ -1849,7 +1849,7 @@ body {
   width: 100%;
   margin: 0;
   padding-bottom: 20px;
-  min-height: 4.72em;
+  min-height: 0;
   font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 1.18;
@@ -1857,7 +1857,7 @@ body {
   font-weight: 400;
   color: #0a2ea8;
   text-align: left;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .practice-card__content h3 strong {
@@ -2540,7 +2540,7 @@ img {
   height: 320px;
   transform: translateX(-50%);
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(77, 131, 255, 0.24) 0%, transparent 72%);
+  background: radial-gradient(circle, rgba(20, 34, 67, 0.34) 0%, transparent 72%);
   pointer-events: none;
   filter: blur(14px);
 }
@@ -2568,15 +2568,15 @@ img {
     opacity 0.45s ease,
     transform 0.45s ease,
     filter 0.45s ease;
-  opacity: 0.34;
-  filter: blur(3px) saturate(1.02) brightness(1.03);
+  opacity: 0.4;
+  filter: blur(3px) saturate(1.08) brightness(1.02);
   transform: scale(0.9) translateY(14px);
 }
 
 .reviewsSwiper .swiper-slide-prev,
 .reviewsSwiper .swiper-slide-next {
-  opacity: 0.72;
-  filter: blur(2.2px) saturate(1.12) brightness(1.05);
+  opacity: 0.78;
+  filter: blur(2px) saturate(1.2) brightness(1.03);
   transform: scale(0.94) translateY(8px);
 }
 
@@ -2611,34 +2611,34 @@ img {
 .reviewsSwiper .swiper-slide-next .review-card {
   border-color: rgba(126, 164, 255, 0.28);
   background:
-    linear-gradient(180deg, rgba(44, 66, 128, 0.76) 0%, rgba(95, 127, 205, 0.74) 100%);
+    linear-gradient(180deg, rgba(19, 52, 136, 0.86) 0%, rgba(56, 116, 230, 0.82) 100%);
   box-shadow:
-    0 24px 46px rgba(78, 128, 255, 0.24),
-    0 10px 28px rgba(132, 181, 255, 0.16),
+    0 24px 46px rgba(20, 34, 67, 0.42),
+    0 10px 28px rgba(20, 34, 67, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .reviewsSwiper .swiper-slide-prev .review-card::before,
 .reviewsSwiper .swiper-slide-next .review-card::before {
   background:
-    radial-gradient(circle at 14% 10%, rgba(180, 214, 255, 0.2) 0%, transparent 24%),
-    linear-gradient(180deg, rgba(122, 166, 255, 0.08) 0%, rgba(118, 162, 255, 0.18) 100%),
-    radial-gradient(circle at 82% 82%, rgba(62, 112, 236, 0.24) 0%, transparent 28%);
+    radial-gradient(circle at 14% 10%, rgba(66, 95, 156, 0.24) 0%, transparent 24%),
+    linear-gradient(180deg, rgba(20, 34, 67, 0.16) 0%, rgba(20, 34, 67, 0.28) 100%),
+    radial-gradient(circle at 82% 82%, rgba(20, 34, 67, 0.36) 0%, transparent 30%);
 }
 
 .reviewsSwiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) .review-card {
   background:
-    linear-gradient(180deg, rgba(60, 79, 132, 0.68) 0%, rgba(103, 133, 204, 0.66) 100%);
+    linear-gradient(180deg, rgba(28, 59, 141, 0.74) 0%, rgba(72, 132, 238, 0.7) 100%);
   box-shadow:
-    0 20px 40px rgba(83, 132, 252, 0.18),
-    0 8px 22px rgba(120, 175, 255, 0.12),
+    0 20px 40px rgba(20, 34, 67, 0.34),
+    0 8px 22px rgba(20, 34, 67, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .reviewsSwiper .swiper-slide-active .review-card {
   box-shadow:
     0 30px 58px rgba(7, 17, 46, 0.3),
-    0 0 26px rgba(78, 128, 255, 0.12),
+    0 0 26px rgba(20, 34, 67, 0.26),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
@@ -2676,7 +2676,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 16px rgba(141, 195, 255, 0.26));
+  filter: drop-shadow(0 0 16px rgba(20, 34, 67, 0.34));
 }
 
 .review-card__badge svg {
@@ -3332,7 +3332,7 @@ img {
 /* Footer */
 .site-footer {
   background: #f0faff;
-  padding: 30px 0 44px;
+  padding: 0;
 }
 
 .footer-container {
@@ -3342,11 +3342,10 @@ img {
 
 .footer-panel {
   width: 100%;
-  border-radius: 26px;
-  border: 1px solid rgba(10, 46, 168, 0.08);
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 18px 44px rgba(112, 141, 176, 0.08);
-  padding: 28px 34px;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  padding: 36px 42px;
   display: grid;
   grid-template-columns: minmax(260px, 1.15fr) minmax(0, 1fr);
   gap: 40px 72px;
@@ -3367,14 +3366,14 @@ img {
 }
 
 .footer-brand-icon {
-  width: 30px;
-  height: 30px;
+ width: 100%;
+  height: 120px;
   object-fit: contain;
 }
 
 .footer-brand-name {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -3385,7 +3384,7 @@ img {
   max-width: 360px;
   margin: 18px 0 22px;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.55;
   font-weight: 500;
   color: rgba(17, 39, 73, 0.68);
@@ -3425,6 +3424,7 @@ img {
   grid-template-columns: repeat(3, minmax(120px, 1fr));
   gap: 24px 40px;
   align-items: start;
+  padding-top: 90px;
 }
 
 .footer-nav-group {
@@ -3434,7 +3434,7 @@ img {
 .footer-nav-title {
   margin: 0 0 16px;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
   color: #112749;
@@ -3457,7 +3457,7 @@ img {
 .footer-links a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.45;
   font-weight: 500;
   color: rgba(17, 39, 73, 0.74);
@@ -3473,7 +3473,7 @@ img {
 
 @media (max-width: 1200px) {
   .site-footer {
-    padding: 26px 0 40px;
+    padding: 0;
   }
 
   .footer-panel {
@@ -3497,6 +3497,7 @@ img {
 
   .footer-nav {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 0;
   }
 }
 
@@ -3506,20 +3507,20 @@ img {
   }
 
   .site-footer {
-    padding: 22px 0 34px;
+    padding: 0;
   }
 
   .footer-panel {
-    padding: 24px 22px;
-    border-radius: 22px;
+    padding: 28px 26px;
+    border-radius: 0;
   }
 
   .footer-brand-name {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .footer-description {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .footer-nav {
@@ -3528,19 +3529,20 @@ img {
   }
 
   .footer-nav-title {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
 
   .footer-links a {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .footer-panel {
-    padding: 20px 18px;
+    padding: 24px 20px;
     gap: 26px;
+    border-radius: 0;
   }
 
   .footer-brandline {
