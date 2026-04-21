@@ -43,9 +43,7 @@ body {
   max-width: 1360px;
   margin: 0 auto;
   padding: 10px 24px 100px;
-  display: grid;
-  grid-template-columns: var(--sidebar-width) 1fr;
-  gap: 44px;
+  display: block;
   align-items: start;
 }
 
@@ -129,7 +127,7 @@ body {
 }
 
 .cta-btn {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -154,6 +152,7 @@ body {
 .content-area {
   position: relative;
   padding-top: 0;
+  width: 100%;
 }
 
 .cards {
@@ -161,7 +160,8 @@ body {
   display: grid;
   grid-template-rows: repeat(4, var(--card-height));
   gap: var(--stack-gap);
-  max-width: 940px;
+  max-width: none;
+  width: 100%;
   padding-bottom: 110px;
 }
 
@@ -299,7 +299,6 @@ body {
   }
 
   .wrapper {
-    gap: 30px;
     padding: 8px 20px 88px;
   }
 
@@ -326,8 +325,7 @@ body {
 
 @media (max-width: 960px) {
   .wrapper {
-    grid-template-columns: 1fr;
-    gap: 26px;
+    display: block;
   }
 
   .sidebar {

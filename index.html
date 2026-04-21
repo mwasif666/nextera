@@ -18,6 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="services-section.css" />
@@ -27,7 +29,7 @@
     <header class="top-nav">
         <div class="top-nav__inner">
             <a href="#top" class="top-nav__avatar" aria-label="Home">
-                <img src="./assets/logo.svg" alt="Logo" />
+                <img src="./assets/Martin Signature.svg" alt="Martin signature" />
             </a>
 
             <nav class="top-nav__menu" aria-label="Main navigation">
@@ -42,18 +44,14 @@
             <div class="top-nav__controls">
 
 
-                <button class="top-nav__lang" type="button" aria-label="Language switcher">
-                    <span class="lang-item">
-                        <img src="https://flagcdn.com/w20/gb.png" alt="English flag" />
-                        <span>English</span>
-                    </span>
-                    <span class="lang-sep">|</span>
-                    <span class="lang-item">
-                        <img src="https://flagcdn.com/w20/de.png" alt="Deutsch flag" />
-                        <span>Deutsch</span>
-                    </span>
-                    <span class="lang-caret">▾</span>
-                </button>
+                <div class="top-nav__lang" role="tablist" aria-label="Language switcher">
+                    <button class="lang-item is-active" type="button" role="tab" aria-selected="true" data-lang="en">
+                        EN
+                    </button>
+                    <button class="lang-item" type="button" role="tab" aria-selected="false" data-lang="de">
+                        DE
+                    </button>
+                </div>
 
                 <a href="#contact-us" class="top-nav__cta">Lets Talk</a>
             </div>
@@ -65,38 +63,145 @@
 
         <div class="hero__content">
             <h1>
-                Fractional CSO/CRO for SMEs & Start-Ups in Sustainable Technologies
-                Energy & Mobility
+                Fractional
+                CSO/CRO for Sustainable
+                Technologies, Energy and
+                Mobility
             </h1>
         </div>
     </section>
     <section class="about-section" id="about">
         <div class="container">
             <!-- Top Logo Row -->
-            <div class="logo-strip">
-                <div class="logo-card">
-                    <img src="https://cdn.simpleicons.org/tesla/0A2EA8" alt="Tesla" />
+            <div class="logo-strip" aria-label="Partner logos">
+                <div class="logo-track">
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/tesla/0A2EA8" alt="Tesla" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/siemens/0A2EA8" alt="Siemens" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/bmw/0A2EA8" alt="BMW" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/volkswagen/0A2EA8" alt="Volkswagen" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/hitachi/0A2EA8" alt="Hitachi" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/audi/0A2EA8" alt="Audi" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/porsche/0A2EA8" alt="Porsche" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/abb/0A2EA8" alt="ABB" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/shell/0A2EA8" alt="Shell" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/bosch/0A2EA8" alt="Bosch" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/ford/0A2EA8" alt="Ford" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/toyota/0A2EA8" alt="Toyota" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/nissan/0A2EA8" alt="Nissan" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/honda/0A2EA8" alt="Honda" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/hyundai/0A2EA8" alt="Hyundai" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/kia/0A2EA8" alt="Kia" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/volvo/0A2EA8" alt="Volvo" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/renault/0A2EA8" alt="Renault" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/panasonic/0A2EA8" alt="Panasonic" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/schneiderelectric/0A2EA8" alt="Schneider Electric" />
+                    </div>
                 </div>
-                <div class="logo-card">
-                    <img src="https://cdn.simpleicons.org/siemens/0A2EA8" alt="Siemens" />
-                </div>
-                <div class="logo-card">
-                    <img src="https://cdn.simpleicons.org/bmw/0A2EA8" alt="BMW" />
-                </div>
-                <div class="logo-card">
-                    <img src="https://cdn.simpleicons.org/volkswagen/0A2EA8" alt="Volkswagen" />
-                </div>
-                <div class="logo-card">
-                    <img src="https://cdn.simpleicons.org/mercedes/0A2EA8" alt="Mercedes" />
+                <div class="logo-track" aria-hidden="true">
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/tesla/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/siemens/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/bmw/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/volkswagen/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/hitachi/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/audi/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/porsche/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/abb/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/shell/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/bosch/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/ford/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/toyota/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/nissan/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/honda/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/hyundai/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/kia/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/volvo/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/renault/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/panasonic/0A2EA8" alt="" />
+                    </div>
+                    <div class="logo-card">
+                        <img src="https://cdn.simpleicons.org/schneiderelectric/0A2EA8" alt="" />
+                    </div>
                 </div>
             </div>
 
             <!-- Bottom Content -->
             <div class="about-grid">
-                <div class="about-label">
-                    <span>About</span>
-                </div>
-
                 <div class="about-content">
                     <h2>
                         Hi, I’m Martin. The CSO/CRO for your next growth phase. From
@@ -216,18 +321,9 @@
                     What I Bring to<br />
                     the Table
                 </h2>
-
-                <p class="track-record__intro">
-                    The experience, results, and lessons I bring from building, leading,
-                    & growing across different stages
-                </p>
             </div>
 
             <div class="track-record__content">
-                <div class="track-record__label">
-                    <span>Track Record</span>
-                </div>
-
                 <div class="track-record__list">
                     <a href="#" class="track-record__item">
                         <div class="track-record__text">
@@ -306,31 +402,7 @@
     </section>
 
     <div class="wrapper" id="services">
-        <!-- LEFT -->
-        <aside class="sidebar">
-            <div>
-                <h3>Services</h3>
 
-                <div class="services-list">
-                    <div class="service-link" data-target="card-1">
-                        Go-to-Market<br />&amp; Sales Strategy
-                    </div>
-                    <div class="service-link" data-target="card-2">
-                        Sparring &amp; Advisory
-                    </div>
-                    <div class="service-link active" data-target="card-3">
-                        Fractional CSO/CRO<br />&amp; Hands-on Execution
-                    </div>
-                    <div class="service-link" data-target="card-4">
-                        Keynotes &amp; Speaking
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="cta-btn">Let’s Work Together <span>→</span></a>
-        </aside>
-
-        <!-- RIGHT -->
         <main class="content-area">
             <section class="cards" id="cards">
                 <article class="card variant-1" id="card-1" data-nav="0">
@@ -457,8 +529,9 @@
                 </p>
             </div>
 
-            <div class="practice-grid">
-                <article class="practice-card">
+            <div class="practice-carousel swiper practiceSwiper">
+                <div class="practice-grid swiper-wrapper">
+                    <article class="practice-card swiper-slide">
                     <div class="practice-card__image">
                         <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
                             alt="Clean energy growth" />
@@ -469,9 +542,9 @@
                             revenue from <strong>€10M to €72M</strong>
                         </h3>
                     </div>
-                </article>
+                    </article>
 
-                <article class="practice-card">
+                <article class="practice-card swiper-slide">
                     <div class="practice-card__image">
                         <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
                             alt="Automotive business operations" />
@@ -484,7 +557,7 @@
                     </div>
                 </article>
 
-                <article class="practice-card">
+                <article class="practice-card swiper-slide">
                     <div class="practice-card__image">
                         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
                             alt="E-commerce growth" />
@@ -497,7 +570,7 @@
                     </div>
                 </article>
 
-                <article class="practice-card">
+                <article class="practice-card swiper-slide">
                     <div class="practice-card__image">
                         <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80"
                             alt="Battery storage and energy" />
@@ -509,6 +582,9 @@
                         </h3>
                     </div>
                 </article>
+                </div>
+
+                <div class="practice-pagination" aria-label="Practice slides pagination"></div>
             </div>
 
             <div class="practice-actions">
@@ -608,6 +684,21 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <article class="review-card">
+                                    <div class="review-card__badge review-card__badge--clarity" aria-hidden="true">
+                                        <svg viewBox="0 0 52 52" aria-hidden="true">
+                                            <circle cx="26" cy="26" r="18"></circle>
+                                            <circle cx="26" cy="26" r="7"></circle>
+                                            <path d="M26 8v6"></path>
+                                            <path d="M26 38v6"></path>
+                                            <path d="M8 26h6"></path>
+                                            <path d="M38 26h6"></path>
+                                            <path d="M33 19l-4 11-10 4 4-11 10-4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="review-card__meta">
+                                        <span class="review-card__eyebrow">Client Feedback</span>
+                                        <h3 class="review-card__title">Strategic<br />Clarity</h3>
+                                    </div>
                                     <div class="review-card__content">
                                         <p>
                                             “What stood out was not only the strategic clarity, but
@@ -633,6 +724,16 @@
 
                             <div class="swiper-slide">
                                 <article class="review-card">
+                                    <div class="review-card__badge review-card__badge--execution" aria-hidden="true">
+                                        <svg viewBox="0 0 52 52" aria-hidden="true">
+                                            <path d="M22 8h8l10 10v16L30 44H22L12 34V18L22 8z"></path>
+                                            <path d="M28 14l-8 12h7l-3 12 11-15h-7l3-9z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="review-card__meta">
+                                        <span class="review-card__eyebrow">Client Feedback</span>
+                                        <h3 class="review-card__title">Hands-On<br />Execution</h3>
+                                    </div>
                                     <div class="review-card__content">
                                         <p>
                                             “Martin hat unseren Vertrieb und den Marketingauftritt
@@ -659,6 +760,20 @@
 
                             <div class="swiper-slide">
                                 <article class="review-card">
+                                    <div class="review-card__badge review-card__badge--focus" aria-hidden="true">
+                                        <svg viewBox="0 0 52 52" aria-hidden="true">
+                                            <path d="M12 38h28"></path>
+                                            <path d="M18 38V27"></path>
+                                            <path d="M26 38V20"></path>
+                                            <path d="M34 38V14"></path>
+                                            <path d="M15 18l7-6 6 5 9-9"></path>
+                                            <path d="M32 8h5v5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="review-card__meta">
+                                        <span class="review-card__eyebrow">Client Feedback</span>
+                                        <h3 class="review-card__title">Commercial<br />Focus</h3>
+                                    </div>
                                     <div class="review-card__content">
                                         <p>
                                             “Martin brought structure, focus, and momentum into our
@@ -684,6 +799,17 @@
 
                             <div class="swiper-slide">
                                 <article class="review-card">
+                                    <div class="review-card__badge review-card__badge--positioning" aria-hidden="true">
+                                        <svg viewBox="0 0 52 52" aria-hidden="true">
+                                            <path d="M26 42s10-8.5 10-18a10 10 0 1 0 -20 0c0 9.5 10 18 10 18z"></path>
+                                            <circle cx="26" cy="24" r="4"></circle>
+                                            <path d="M10 41c4-3 10-5 16-5s12 2 16 5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="review-card__meta">
+                                        <span class="review-card__eyebrow">Client Feedback</span>
+                                        <h3 class="review-card__title">Sharper<br />Positioning</h3>
+                                    </div>
                                     <div class="review-card__content">
                                         <p>
                                             “Martin helped us sharpen our positioning, focus the
@@ -709,6 +835,18 @@
 
                             <div class="swiper-slide">
                                 <article class="review-card">
+                                    <div class="review-card__badge review-card__badge--thinking" aria-hidden="true">
+                                        <svg viewBox="0 0 52 52" aria-hidden="true">
+                                            <circle cx="26" cy="26" r="2.5"></circle>
+                                            <ellipse cx="26" cy="26" rx="16" ry="7"></ellipse>
+                                            <ellipse cx="26" cy="26" rx="16" ry="7" transform="rotate(60 26 26)"></ellipse>
+                                            <ellipse cx="26" cy="26" rx="16" ry="7" transform="rotate(-60 26 26)"></ellipse>
+                                        </svg>
+                                    </div>
+                                    <div class="review-card__meta">
+                                        <span class="review-card__eyebrow">Client Feedback</span>
+                                        <h3 class="review-card__title">Senior<br />Thinking</h3>
+                                    </div>
                                     <div class="review-card__content">
                                         <p>
                                             “He combines senior commercial thinking with real
@@ -775,8 +913,20 @@
                         <input type="text" name="company" placeholder="Company*" required />
                     </div>
 
-                    <div class="form-field">
-                        <input type="text" name="industry" placeholder="Industry*" required />
+                    <div class="form-field form-field--calendly">
+                        <button type="button" class="calendly-trigger"
+                            onclick="if (window.Calendly) { Calendly.initPopupWidget({ url: 'https://calendly.com/mwasif66625426/30min' }); } else { window.open('https://calendly.com/mwasif66625426/30min', '_blank', 'noopener'); } return false;"
+                            aria-label="Select date and time with Calendly">
+                            <span>Select Date &amp; Time*</span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3.5" y="5" width="17" height="15" rx="3"></rect>
+                                <path d="M8 3.5v3"></path>
+                                <path d="M16 3.5v3"></path>
+                                <path d="M3.5 9.5h17"></path>
+                                <path d="M8 13h3"></path>
+                                <path d="M12.5 16.5l2 2 4-4"></path>
+                            </svg>
+                        </button>
                     </div>
 
                     <div class="form-field form-field--select">
@@ -810,47 +960,24 @@
 
     <footer class="site-footer">
         <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Left Column -->
-                <div class="footer-col footer-col--left">
-                    <a href="#" class="footer-signature">
-                        <img src="./assets/signature.png" alt="Martin Riegler signature" />
+            <div class="footer-panel">
+                <div class="footer-brand">
+                    <a href="#top" class="footer-brandline" aria-label="Martin Riegler home">
+                        <img src="./assets/logo.svg" alt="Martin Riegler mark" class="footer-brand-icon" />
+                        <span class="footer-brand-name">Martin Riegler</span>
                     </a>
-
-                    <h2 class="footer-title">Martin Riegler</h2>
 
                     <p class="footer-description">
                         Interim CSO/CRO helping companies in energy, mobility, and
                         sustainable technologies grow with better sales, sharper strategy
-                        &amp; hands-on execution
+                        &amp; hands-on execution.
                     </p>
 
-                    <div class="footer-links-grid">
-                        <ul class="footer-links">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Track Record</a></li>
-                            <li><a href="#">Success Stories</a></li>
-                        </ul>
-
-                        <ul class="footer-links">
-                            <li><a href="#">How I Work</a></li>
-                            <li><a href="#">Speaking</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-
                     <div class="footer-socials">
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="#" aria-label="X">
                             <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M6.94 8.5H3.56V20H6.94V8.5Z" stroke="currentColor" stroke-width="1.7"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M5.25 6.25C6.2165 6.25 7 5.4665 7 4.5C7 3.5335 6.2165 2.75 5.25 2.75C4.2835 2.75 3.5 3.5335 3.5 4.5C3.5 5.4665 4.2835 6.25 5.25 6.25Z"
-                                    stroke="currentColor" stroke-width="1.7" />
-                                <path
-                                    d="M12.56 20V13.48C12.56 11.99 13.39 10.98 14.82 10.98C16.19 10.98 16.86 11.91 16.86 13.48V20H20.25V12.38C20.25 9.58 18.75 8.28 16.74 8.28C15.12 8.28 14.39 9.17 13.99 9.79V8.5H10.75C10.79 9.36 10.75 20 10.75 20H12.56Z"
-                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                <path d="M4 4L20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                                <path d="M20 4L4 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
                             </svg>
                         </a>
 
@@ -863,18 +990,17 @@
                             </svg>
                         </a>
 
-                        <a href="#" aria-label="X">
+                        <a href="#" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M4 4L20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-                                <path d="M20 4L4 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-                            </svg>
-                        </a>
-
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6.94 8.5H3.56V20H6.94V8.5Z" stroke="currentColor" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                                 <path
-                                    d="M14 8H16.5V4.8C16.07 4.74 15.15 4.6 14.08 4.6C11.83 4.6 10.29 5.97 10.29 8.5V11H7.5V14.58H10.29V20H13.71V14.58H16.39L16.82 11H13.71V8.86C13.71 7.83 13.99 8 14 8Z"
-                                    fill="currentColor" />
+                                    d="M5.25 6.25C6.2165 6.25 7 5.4665 7 4.5C7 3.5335 6.2165 2.75 5.25 2.75C4.2835 2.75 3.5 3.5335 3.5 4.5C3.5 5.4665 4.2835 6.25 5.25 6.25Z"
+                                    stroke="currentColor" stroke-width="1.7" />
+                                <path
+                                    d="M12.56 20V13.48C12.56 11.99 13.39 10.98 14.82 10.98C16.19 10.98 16.86 11.91 16.86 13.48V20H20.25V12.38C20.25 9.58 18.75 8.28 16.74 8.28C15.12 8.28 14.39 9.17 13.99 9.79V8.5H10.75C10.79 9.36 10.75 20 10.75 20H12.56Z"
+                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </a>
 
@@ -889,84 +1015,34 @@
                     </div>
                 </div>
 
-                <!-- Divider -->
-                <div class="footer-divider"></div>
-
-                <!-- Right Column -->
-                <div class="footer-col footer-col--right">
-                    <a href="#" class="footer-brandmark">
-                        <img src="./assets/arrow.png" alt="nextera brand icon" />
-                    </a>
-
-                    <h2 class="footer-title">nextera GmbH</h2>
-
-                    <p class="footer-description">
-                        Providing the structure and platform through which he leads
-                        projects, works with clients and brings in specialist support when
-                        needed
-                    </p>
-
-                    <div class="footer-links-grid">
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">Overview</h3>
                         <ul class="footer-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Track Record</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">How I Work</a></li>
+                            <li><a href="#">Speaking</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">LinkedIn</a></li>
                         </ul>
+                    </div>
 
+                    <div class="footer-nav-group">
+                        <h3 class="footer-nav-title">Company</h3>
                         <ul class="footer-links">
+                            <li><a href="#">Contact</a></li>
                             <li><a href="#">Impressum</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">DE | EN</a></li>
                         </ul>
-                    </div>
-
-                    <div class="footer-socials">
-                        <a href="#" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M6.94 8.5H3.56V20H6.94V8.5Z" stroke="currentColor" stroke-width="1.7"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M5.25 6.25C6.2165 6.25 7 5.4665 7 4.5C7 3.5335 6.2165 2.75 5.25 2.75C4.2835 2.75 3.5 3.5335 3.5 4.5C3.5 5.4665 4.2835 6.25 5.25 6.25Z"
-                                    stroke="currentColor" stroke-width="1.7" />
-                                <path
-                                    d="M12.56 20V13.48C12.56 11.99 13.39 10.98 14.82 10.98C16.19 10.98 16.86 11.91 16.86 13.48V20H20.25V12.38C20.25 9.58 18.75 8.28 16.74 8.28C15.12 8.28 14.39 9.17 13.99 9.79V8.5H10.75C10.79 9.36 10.75 20 10.75 20H12.56Z"
-                                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-
-                        <a href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor"
-                                    stroke-width="1.7" />
-                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7" />
-                                <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" />
-                            </svg>
-                        </a>
-
-                        <a href="#" aria-label="X">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M4 4L20 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-                                <path d="M20 4L4 20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-                            </svg>
-                        </a>
-
-                        <a href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path
-                                    d="M14 8H16.5V4.8C16.07 4.74 15.15 4.6 14.08 4.6C11.83 4.6 10.29 5.97 10.29 8.5V11H7.5V14.58H10.29V20H13.71V14.58H16.39L16.82 11H13.71V8.86C13.71 7.83 13.99 8 14 8Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </a>
-
-                        <a href="#" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path
-                                    d="M21 12C21 12 21 8.9 20.6 7.4C20.38 6.57 19.73 5.92 18.9 5.7C17.4 5.3 12 5.3 12 5.3C12 5.3 6.6 5.3 5.1 5.7C4.27 5.92 3.62 6.57 3.4 7.4C3 8.9 3 12 3 12C3 12 3 15.1 3.4 16.6C3.62 17.43 4.27 18.08 5.1 18.3C6.6 18.7 12 18.7 12 18.7C12 18.7 17.4 18.7 18.9 18.3C19.73 18.08 20.38 17.43 20.6 16.6C21 15.1 21 12 21 12Z"
-                                    stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
-                                <path d="M10 9.25L15 12L10 14.75V9.25Z" fill="currentColor" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -37,6 +37,86 @@ const reviewsSwiper = new Swiper(".reviewsSwiper", {
   },
 });
 
+let practiceSwiper;
+
+function initPracticeSwiper() {
+  const practiceRoot = document.querySelector(".practiceSwiper");
+  if (!practiceRoot || typeof Swiper === "undefined") return;
+
+  const paginationEl = practiceRoot.querySelector(".practice-pagination");
+
+  function syncPracticeSwiper() {
+    if (window.innerWidth <= 768) {
+      if (!practiceSwiper) {
+        practiceSwiper = new Swiper(practiceRoot, {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          speed: 650,
+          grabCursor: true,
+          pagination: {
+            el: paginationEl,
+            clickable: true,
+          },
+        });
+      } else {
+        practiceSwiper.update();
+      }
+
+      return;
+    }
+
+    if (practiceSwiper) {
+      practiceSwiper.destroy(true, true);
+      practiceSwiper = null;
+    }
+  }
+
+  syncPracticeSwiper();
+  window.addEventListener("resize", syncPracticeSwiper);
+}
+
+function initLanguageTabs() {
+  const legacySwitcher = document.querySelector(".top-nav__lang");
+  if (!legacySwitcher) return;
+
+  let langSwitcher = legacySwitcher;
+
+  if (legacySwitcher.tagName === "BUTTON") {
+    const tabsMarkup = [
+      '<button class="lang-item is-active" type="button" role="tab" aria-selected="true" data-lang="en">EN</button>',
+      '<button class="lang-item" type="button" role="tab" aria-selected="false" data-lang="de">DE</button>',
+    ].join("");
+
+    const nextSwitcher = document.createElement("div");
+    nextSwitcher.className = legacySwitcher.className;
+    nextSwitcher.setAttribute("role", "tablist");
+    nextSwitcher.setAttribute("aria-label", "Language switcher");
+    nextSwitcher.innerHTML = tabsMarkup;
+
+    legacySwitcher.replaceWith(nextSwitcher);
+    langSwitcher = nextSwitcher;
+  }
+
+  const tabs = Array.from(langSwitcher.querySelectorAll(".lang-item[data-lang]"));
+  if (!tabs.length) return;
+
+  function setActiveLanguage(nextTab) {
+    tabs.forEach((tab) => {
+      const isActive = tab === nextTab;
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-selected", String(isActive));
+    });
+
+    if (nextTab.dataset.lang) {
+      document.documentElement.lang = nextTab.dataset.lang;
+    }
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => setActiveLanguage(tab));
+  });
+}
+
 function initGlobalScrollAnimations() {
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
     return;
@@ -126,6 +206,16 @@ function initGlobalScrollAnimations() {
   }
 
   ScrollTrigger.refresh();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    initLanguageTabs();
+    initPracticeSwiper();
+  });
+} else {
+  initLanguageTabs();
+  initPracticeSwiper();
 }
 
 window.addEventListener("load", initGlobalScrollAnimations);
