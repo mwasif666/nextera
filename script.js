@@ -117,6 +117,51 @@ function initLanguageTabs() {
   });
 }
 
+function initResponsiveNav() {
+  const nav = document.querySelector(".top-nav");
+  if (!nav) return;
+
+  const toggle = nav.querySelector(".top-nav__toggle");
+  const menu = nav.querySelector(".top-nav__menu");
+  if (!toggle || !menu) return;
+
+  function closeMenu() {
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open menu");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  });
+
+  menu.addEventListener("click", (event) => {
+    if (event.target instanceof Element && event.target.closest("a")) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (nav.classList.contains("is-open") && !nav.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      closeMenu();
+    }
+  });
+}
+
 function initGlobalScrollAnimations() {
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
     return;
@@ -210,10 +255,12 @@ function initGlobalScrollAnimations() {
 
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
+    initResponsiveNav();
     initLanguageTabs();
     initPracticeSwiper();
   });
 } else {
+  initResponsiveNav();
   initLanguageTabs();
   initPracticeSwiper();
 }

@@ -111,6 +111,10 @@ body {
   color: #ffffff;
 }
 
+.top-nav__link--mobile-cta {
+  display: none;
+}
+
 .top-nav__controls {
   display: inline-flex;
   align-items: center;
@@ -219,6 +223,53 @@ body {
   box-shadow:
     0 0 0 1px rgba(34, 104, 255, 0.26) inset,
     0 6px 20px rgba(24, 90, 248, 0.42);
+}
+
+.top-nav__toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(138, 185, 255, 0.42);
+  border-radius: 12px;
+  background: rgba(25, 31, 47, 0.66);
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.top-nav__toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.top-nav__toggle:hover {
+  border-color: rgba(184, 212, 255, 0.62);
+  background: rgba(37, 50, 78, 0.78);
+}
+
+.top-nav.is-open .top-nav__toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.top-nav.is-open .top-nav__toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.top-nav.is-open .top-nav__toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -489,6 +540,138 @@ body {
     font-size: 30px;
     line-height: 1.2;
     letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-nav {
+    top: 10px;
+    width: calc(100% - 16px);
+  }
+
+  .top-nav__inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand controls toggle"
+      "menu menu menu";
+    gap: 8px 10px;
+    min-height: 56px;
+    padding: 8px;
+  }
+
+  .top-nav__avatar {
+    grid-area: brand;
+  }
+
+  .top-nav__controls {
+    grid-area: controls;
+    justify-self: end;
+  }
+
+  .top-nav__toggle {
+    grid-area: toggle;
+    display: inline-flex;
+  }
+
+  .top-nav__menu {
+    grid-area: menu;
+    width: 100%;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 4px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition:
+      max-height 0.3s ease,
+      margin 0.3s ease,
+      padding 0.3s ease,
+      border-color 0.3s ease,
+      opacity 0.22s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .top-nav.is-open .top-nav__menu {
+    max-height: 420px;
+    margin-top: 2px;
+    padding: 8px 0 2px;
+    border-top-color: rgba(138, 185, 255, 0.22);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .top-nav__link {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 12px;
+    line-height: 1.15;
+  }
+
+  .top-nav__link:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .top-nav__link--mobile-cta {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .top-nav__inner {
+    gap: 7px;
+  }
+
+  .top-nav__controls {
+    gap: 6px;
+  }
+
+  .top-nav__cta {
+    display: none;
+  }
+
+  .top-nav__link--mobile-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    background: linear-gradient(135deg, #1f77ff 0%, #194fd8 100%);
+    border: 1px solid rgba(138, 185, 255, 0.5);
+  }
+}
+
+@media (max-width: 380px) {
+  .top-nav__avatar {
+    width: 82px;
+  }
+
+  .top-nav__lang {
+    padding: 0 4px;
+  }
+
+  .lang-item {
+    min-width: 26px;
+    padding: 0 5px;
+  }
+
+  .top-nav__toggle {
+    width: 38px;
+    height: 38px;
   }
 }
 .about-section {
@@ -3523,6 +3706,12 @@ img {
     font-size: 16px;
   }
 
+  .footer-brand-icon {
+    width: min(180px, 54vw);
+    height: auto;
+    max-height: 90px;
+  }
+
   .footer-nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px 20px;
@@ -3550,8 +3739,9 @@ img {
   }
 
   .footer-brand-icon {
-    width: 28px;
-    height: 28px;
+    width: min(150px, 58vw);
+    height: auto;
+    max-height: 72px;
   }
 
   .footer-socials {

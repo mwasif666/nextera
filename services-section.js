@@ -92,7 +92,7 @@ serviceLinks.forEach((link) => {
 
     if (target) {
       const topOffset =
-        target.getBoundingClientRect().top + window.scrollY - 18;
+        target.getBoundingClientRect().top + window.scrollY - 20;
       window.scrollTo({ top: topOffset, behavior: "smooth" });
     }
   });
